@@ -12,4 +12,4 @@ Let's you pick up entities.
 
 ## Commands
 
-use rsg target to highlight an object and pick up and use E to dropthe object 
+Use rsg-target to highlight an object and pick up then use E to drop the object.
