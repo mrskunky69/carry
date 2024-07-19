@@ -49,4 +49,3 @@ RSGCore.Commands.Add('forcedrop', 'Force a specific player to drop carried objec
         TriggerClientEvent('RSGCore:Notify', source, 'Invalid player ID', 'error')
     end
 end, 'admin')
-

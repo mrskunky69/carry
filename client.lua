@@ -150,6 +150,3 @@ AddEventHandler('redm:updateEntityCarry', function(netId, isCarried, playerId)
         end
     end
 end)
-
-    end
-end)
