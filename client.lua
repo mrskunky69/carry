@@ -48,6 +48,8 @@ function createAndPickupObject(objectModel, targetCoords)
     SetModelAsNoLongerNeeded(modelHash)
 end
 
+exports('createAndPickupObject',createAndPickupObject);
+
 function carryEntity(entity)
     carryingEntity = entity
     carryingEntityNetId = NetworkGetNetworkIdFromEntity(entity)
@@ -99,6 +101,8 @@ function dropEntity()
         RSGCore.Functions.Notify('Object dropped.', 'success', 3000)
     end
 end
+
+exports('dropEntity',dropEntity)
 
 Citizen.CreateThread(function()
     while true do
