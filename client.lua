@@ -65,7 +65,7 @@ function carryEntity(entity)
     AttachEntityToEntity(entity, playerPed, GetPedBoneIndex(playerPed, 28422), 0.0, 0.6, -0.2, 0.0, 0.0, 0.0, true, true, false, true, 1, true)
 
     TriggerServerEvent('redm:syncEntityCarry', carryingEntityNetId, true)
-    showDropNotification()
+    --showDropNotification()
 end
 
 Citizen.CreateThread(function()
@@ -78,7 +78,7 @@ Citizen.CreateThread(function()
 
             local currentTime = GetGameTimer()
             if currentTime - lastNotificationTime > notificationCooldown then
-                showDropNotification()
+                --showDropNotification()
                 lastNotificationTime = currentTime
             end
         end
